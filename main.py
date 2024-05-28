@@ -34,8 +34,8 @@ while True:
     else:
         face_counter = 0  # Resetar o contador se nenhum rosto for detectado
 
-    # Se um rosto for detectado por 50 frames consecutivos, execute landMarks.py e depois iris.py
-    if face_counter >= 10:
+    # Se um rosto for detectado por 30 frames consecutivos, execute landMarks.py e depois iris.py
+    if face_counter >= 30:
         # Fechar a janela da imagem e liberar a câmera
         cap.release()
         cv2.destroyAllWindows()
